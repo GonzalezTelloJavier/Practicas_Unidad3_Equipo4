@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Juego de Adivina n&uacute;mero</title>
+    <link rel="stylesheet" type="text/css" href="19AdivinaNumero.css">
+  </head>
+
+  <body>
+    <h1>Juego de Adivina n&uacute;mero</h1>
+
+    <p>Se ha generado un valor de entre 1 y 100. Vea si puede adivinarlo en 10 turnos o menos. Le diremos si su estimación fue demasiado alta o demasiado baja.</p>
+
+    <div class="form">
+      <label for="campoAdivina">Ingrese el valor que piensa: </label>
+      <input type="text" id="campoAdivina" class="campoAdivina">
+      
+      <button type="submit" class="adivinaSubmit" onclick="anade()">Adivina</button>
+    </div>
+
+    <div class="resultParas">
+      <p class="adivinanzas"></p>
+      <p class="ultimoResultado"></p>
+      <p class="bajoOAlto"></p>
+    </div>
+
+    <script language="javascript" src = "19AdivinaNumero.js"></script>
+      
+    
+  </body>
+</html>

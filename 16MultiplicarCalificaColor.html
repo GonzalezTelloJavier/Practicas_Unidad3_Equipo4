@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<!--
+Tablas de Multiplicar"
+-->
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tablas de Multiplicar</title>
+	</head>
+	<body>
+        <link rel="stylesheet" type="text/css" href="16MultiplicarCalificaColor.css">
+		<form>
+			Selecciona que n&uacute;mero de tabla
+			<select name="opTabla" id="opTabla">
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+			</select>
+
+			<p><button type="button" value="Ejecutar"onclick="muestra(opTabla.value, tabla, document.getElementById('contenido'));">Ejecutar</button>
+						<br/>
+			</p>
+            <label id="lblCalif"></label>
+			<div id="contenido" style="visibility:hidden">
+				<table id="tabla" border="2" >
+					<thead>
+						<th>Operaci&oacute;n</th>
+						<th>Resultado</th>
+						<th>Calificacion</th>
+					</thead>
+				</table>
+				<br><br>
+				<button type="button" value="Calificar Examen" onclick="califica(opTabla.value, tabla);">Calificar Examen</button>
+						</div>
+		</form>
+        <script language="javascript" src="16MultiplicarCalificaColor.js"></script>
+	</body>
+</html>
